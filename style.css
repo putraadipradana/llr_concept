@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.foot svg {
+  display: block;
+  font: 8.5em 'Poppins';
+  height: 200px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: gray;
+  stroke-dasharray: 6% 29%;
+  stroke-width: 5px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+stroke: #212529;
+}
+
+.text-copy:nth-child(2){
+stroke: #212529;
+animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+stroke: #212529;
+animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+stroke: #212529;
+animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+stroke: #212529;
+animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+100% {stroke-dashoffset: -35%;}
+}
+
+.carousels-item img {
+  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navbar {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navbar-brand {
+  padding: 0;
+  font-size: 22px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'roboto-mono', monospace;
+}
+
+.button {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 0px;
+  fill: white;
+}
+
+.XE8yyf {
+  height: 48px;
+  width: 48px;
+  position: relative;
+  z-index: 10;
+}
+
+.animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+
+.navbar-bg {
+  background-color: white;
+}
+
+.title h2 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.title {
+  margin-top: 90px;
+}
+
+.foot-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.foot span {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: 'roboto mono', monospace;
+  font-size: 14px;
+}
+
+#offcanvasTopLabel {
+    margin: 0;
+}
+
+/* post */
+.content {
+  margin-top: 150px;
+}
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.post .date {
+  min-width: fit-content;
+  font-weight: 700;
+}
+
+.post .main {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.post .read {
+  min-width: fit-content;
+}
+
+
+.foot {
+  background-color: black;
+  padding: 30px;
+}
+
+.ex {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .card_a {
+    margin-bottom: 20px;
+  }
+  .s {
+    display: none;
+  }
+
+  .foot svg {
+    width: auto;
+    height: auto;
+    font: 15.5em 'Poppins';
+  }
+
+  .text-copy {
+    stroke-width: 8px;
+  }
+
+  .ex {
+    display: block;
+  }
+  
+  .navbar {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .about-card {
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+
+  .profile-info {
+      padding: 0;
+      padding-top: 20px;
+  }
+
+  .profile-img img {
+      display: flex;
+      flex-wrap: wrap;
+      width: 330px;
+  }
+
+  .post {
+      flex-direction: column;
+  }
+
+  .post .main {
+    margin-top: 10px;
+    margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  .post .read {
+    margin-top: 20px;
+  }
+
+  .foot-content {
+    flex-direction: column;
+  }
+
+  .social h2 {
+    font-size: 14px;
+  }
+
+  .contact h2 {
+    font-size: 14px;
+  }
+
+  .con span {
+    font-size: 12px;
+  }
+
+  .blog-list {
+    flex-direction: column;
+  }
+
+  .offcanvas-top {
+      height: 100vh;
+  }
+}
