@@ -109,6 +109,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  flex: 1;
   justify-content: space-around;
   margin-bottom: 50px;
 }
@@ -222,11 +223,12 @@ footer {
   }
 
   .navbar-brand {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .navbar {
     padding-left: 30px;
     padding-right: 15px;
   }
+  
 }
