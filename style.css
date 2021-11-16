@@ -109,7 +109,6 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  flex: 1;
   justify-content: space-around;
   margin-bottom: 50px;
 }
