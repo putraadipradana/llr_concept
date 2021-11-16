@@ -7,88 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <title>I am sanctum</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home">Sanctum</a>
-        </div>
-    </nav>
-
+    
     <section id="home">
         <div class="carousels-item">
-            <img src="https://images.pexels.com/photos/2000885/pexels-photo-2000885.jpeg?cs=srgb&dl=pexels-ruslan-alekso-2000885.jpg&fm=jpg" class="d-block w-100" alt="...">
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+                <div class="">
+                    <a class="navbar-brand" href="index.html">Sanctum</a>
+                </div>
+                <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
+            </nav>
+            <img src="assets/images/home.jpg" class="d-block w-100" alt="...">
         </div>
-        <a role="button" href="#list" class="button mb-3">
-            <svg class="XE8yyf" viewBox="0 0 24 24" focusable="false">
-                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                <path d="M0-.75h24v24H0z" fill="none"></path>
-            </svg>
-        </a>
-        <div id="list"></div>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <a type="button" class="close mt-3 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        </div>
 
 
         <!-- content -->
-        <div class="content mb-5">
-            <div class="container">
-                <div class="post">
-                    <div class="date">
-                        <span>12 Nov 2021</span>
-                    </div>
-                    <div class="main">
-                        <div class="location">
-                            <span>Mataram, Nusa Tenggara Barat</span>
-                        </div>
-                        <div class="xz">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum.</span>
-                        </div>
-                    </div>
-                    <div class="read">
-                        <button type="button" class="btn btn-dark">Read More</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="post">
-                    <div class="date">
-                        <span>12 Nov 2021</span>
-                    </div>
-                    <div class="main">
-                        <div class="location">
-                            <span>Mataram, Nusa Tenggara Barat</span>
-                        </div>
-                        <div class="xz">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum.</span>
-                        </div>
-                    </div>
-                    <div class="read">
-                        <button type="button" class="btn btn-dark">Read More</button>
-                    </div>
-                </div>
-                <hr>
-                <div class="post">
-                    <div class="date">
-                        <span>12 Nov 2021</span>
-                    </div>
-                    <div class="main">
-                        <div class="location">
-                            <span>Mataram, Nusa Tenggara Barat</span>
-                        </div>
-                        <div class="xz">
-                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, dolorum.</span>
-                        </div>
-                    </div>
-                    <div class="read">
-                        <button type="button" class="btn btn-dark">Read More</button>
-                    </div>
-                </div>
-                <hr>
+        <div class="content ms-5 me-5">
+            <div class="index-title mb-3">
+                <h4>Blog</h4>
             </div>
+            <div class="cardblog">
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog1.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>The house of wolves</span>
+                    </div>
+                    <div class="main">
+                        <p>I've learned a lot but it took me too long to find out who I am and to prove you wrong. How can you live before you die. When you're already dead on the inside
+                            </p>
+                    </div>
+                    <div class="category">
+                        <span>Tour</span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog2.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>exit wounds</span>
+                    </div>
+                    <div class="main">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus et tempora suscipit officiis impedit ipsum possimus culpa quidem repellat quia!</p>
+                    </div>
+                    <div class="category">
+                        <span>Intervews</span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog3.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                    <div class="main">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus et tempora suscipit officiis impedit ipsum possimus culpa quidem repellat quia!</p>
+                    </div>
+                    <div class="category">
+                        <span>News</span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog4.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>The house of wolves</span>
+                    </div>
+                    <div class="main">
+                        <p>I've learned a lot but it took me too long to find out who I am and to prove you wrong. How can you live before you die. When you're already dead on the inside
+                            </p>
+                    </div>
+                    <div class="category">
+                        <span>Tour</span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog5.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                    <div class="main">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus et tempora suscipit officiis impedit ipsum possimus culpa quidem repellat quia!</p>
+                    </div>
+                    <div class="category">
+                        <span>Intervews</span>
+                    </div>
+                </div>
+                <div class="list">
+                    <div class="thumb">
+                        <img class="img" src="assets/images/blog6.jpg" alt="">
+                    </div>
+                    <div class="title">
+                        <span>Lorem ipsum dolor sit amet consectetur.</span>
+                    </div>
+                    <div class="main">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus et tempora suscipit officiis impedit ipsum possimus culpa quidem repellat quia!</p>
+                    </div>
+                    <div class="category">
+                        <span>News</span>
+                    </div>
+                </div>
+            </div>
+            <a class="see-all" href="blog.html">See All Posts</a>
+        </div>
+        <div class="about">
+
         </div>
         </div>
         <!-- end of content -->
@@ -97,27 +147,14 @@
 
     <footer class="sticky-footer">
         <div class="foot">
-            <svg viewBox="0 0 960 300">
-                <symbol id="s-text">
-                    <text text-anchor="middle" class="s" x="50%" y="70%">Sanctum</text>
-                    <text text-anchor="middle" class="ex text-center" x="50%" y="80%">Sanc</text>
-                </symbol>
-
-                <g class="g-ants">
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                    <use xlink:href="#s-text" class="text-copy"></use>
-                </g>
-            </svg>
+            
         </div>
 
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="app.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->

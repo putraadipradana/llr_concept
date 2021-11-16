@@ -1,55 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap");
+@font-face {
+  font-family: 'dec';
+  src: url('Empires.otf');
+}
+@font-face {
+  font-family: 'found';
+  src: url('test-founders-grotesk-semibold.woff2');
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }
 
-.foot svg {
-  display: block;
-  font: 8.5em 'Poppins';
-  height: 200px;
-  margin: 0 auto;
+body {
+  background-color: black;
 }
 
-.text-copy {
-  fill: none;
-  stroke: gray;
-  stroke-dasharray: 6% 29%;
-  stroke-width: 5px;
-  stroke-dashoffset: 0%;
-  animation: stroke-offset 5.5s infinite linear;
+.offcanvas {
+  background-color: #1c1c1c;
+  color: white;
 }
 
-.text-copy:nth-child(1){
-stroke: #212529;
+.offcanvas-body li  {
+  text-decoration: none;
+  list-style: none;
 }
 
-.text-copy:nth-child(2){
-stroke: #212529;
-animation-delay: -2s;
+.offcanvas-body a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.text-copy:nth-child(3){
-stroke: #212529;
-animation-delay: -3s;
+.offcanvas-body a:hover {
+  opacity: 55%;
 }
 
-.text-copy:nth-child(4){
-stroke: #212529;
-animation-delay: -4s;
+.close {
+  margin-left: 30px;
+  font-size: 13px;
+  text-decoration: none;
+  color: white;
 }
 
-.text-copy:nth-child(5){
-stroke: #212529;
-animation-delay: -5s;
+.close:hover {
+  color: gray;
+  opacity: 55%;
 }
 
-@keyframes stroke-offset{
-100% {stroke-dashoffset: -35%;}
+.menu {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.menu:hover {
+  color: gray;
+  opacity: 80%;
+}
+
+.see-all {
+  color: white;
+  margin-left: 100px;
+}
+
+.see-all:hover {
+  color: gray;
+  opacity: 55%;
 }
 
 .carousels-item img {
@@ -57,188 +80,153 @@ animation-delay: -5s;
   max-height: 100vh;
   height: 100vh;
   object-fit: cover;
+  filter: grayscale();
 }
 
 .navbar {
-  padding-left: 30px;
+  padding-left: 50px;
   padding-right: 30px;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-brand {
   padding: 0;
-  font-size: 22px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
+  font-size: 60px;
+  font-family: 'dec';
+  text-transform: capitalize;
 }
 
-p {
-  font-family: 'roboto-mono', monospace;
+.blog-quotes p {
+  color: gray;
+  font-size: 14px;
+  max-width: 700px;
 }
 
-.button {
-  position: absolute;
-  width: 100%;
+.cardblog {
   display: flex;
-  justify-content: center;
-  bottom: 0px;
-  fill: white;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 50px;
 }
 
-.XE8yyf {
-  height: 48px;
-  width: 48px;
-  position: relative;
-  z-index: 10;
+.blog-quotes {
+  margin-top: 300px;
+  margin-bottom: 100px;
+  display: flex;
+  text-align: right;
+  justify-content: space-between;
 }
 
-.animate__animated.animate__bounce {
-  --animate-duration: 2s;
+.index-title {
+  color: white;
 }
 
-.navbar-bg {
-  background-color: white;
+.list {
+  max-width: 410px;
+  height: fit-content;
+  margin-bottom: 30px;
 }
 
-.title h2 {
-  font-weight: 800;
-  font-size: 40px;
+.list:hover {
+  cursor: pointer;
 }
+
+.list:hover .img {
+  filter: none;
+}
+
+.list:hover .main {
+  color: white;
+}
+
+.list:hover .category span {
+  color: gray;
+}
+
+.img {
+  height: 260px;
+  width: 410px;
+  object-fit: cover;
+  filter: grayscale(10);
+}
+
 
 .title {
-  margin-top: 90px;
-}
-
-.foot-content {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-}
-
-.foot span {
+  margin-top: 5px;
   color: white;
-  display: flex;
-  justify-content: center;
-  font-family: 'roboto mono', monospace;
+}
+
+.title span {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.main {
+  margin-top: 10px;
+  color: rgb(95, 95, 95);
+}
+
+.main p {
+  font-size: 13px;
+}
+
+.category span {
   font-size: 14px;
 }
 
-#offcanvasTopLabel {
-    margin: 0;
+footer {
+  height: 100px;
 }
 
-/* post */
 .content {
-  margin-top: 150px;
-}
-.post {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  margin-top: 300px;
 }
 
-.post .date {
-  min-width: fit-content;
-  font-weight: 700;
+.brand {
+  height: 30px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 
-.post .main {
-  margin-left: 35px;
-  margin-right: 35px;
-}
-
-.post .read {
-  min-width: fit-content;
-}
-
-
-.foot {
+.top {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  height: 30px;
   background-color: black;
-  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.ex {
-  display: none;
+.top .left {
+  align-items: center;
 }
 
+.top .right {
+  align-items: center;
+}
+
+.about {
+  height: 100vh;
+  margin-top: 50vh;
+}
 @media only screen and (max-width: 900px) {
-  .card_a {
-    margin-bottom: 20px;
-  }
-  .s {
-    display: none;
+  .blog-title p {
+    font-size: 50px;
   }
 
-  .foot svg {
-    width: auto;
-    height: auto;
-    font: 15.5em 'Poppins';
+  .navbar-brand {
+    font-size: 40px;
   }
 
-  .text-copy {
-    stroke-width: 8px;
-  }
-
-  .ex {
-    display: block;
-  }
-  
   .navbar {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-
-  .about-card {
-      flex-direction: column;
-      flex-wrap: wrap;
-  }
-
-  .profile-info {
-      padding: 0;
-      padding-top: 20px;
-  }
-
-  .profile-img img {
-      display: flex;
-      flex-wrap: wrap;
-      width: 330px;
-  }
-
-  .post {
-      flex-direction: column;
-  }
-
-  .post .main {
-    margin-top: 10px;
-    margin-left: 0px;
-      margin-right: 0px;
-  }
-
-  .post .read {
-    margin-top: 20px;
-  }
-
-  .foot-content {
-    flex-direction: column;
-  }
-
-  .social h2 {
-    font-size: 14px;
-  }
-
-  .contact h2 {
-    font-size: 14px;
-  }
-
-  .con span {
-    font-size: 12px;
-  }
-
-  .blog-list {
-    flex-direction: column;
-  }
-
-  .offcanvas-top {
-      height: 100vh;
+    padding-left: 30px;
+    padding-right: 15px;
   }
 }
