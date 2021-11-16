@@ -228,6 +228,11 @@ footer {
 
   .navbar {
     padding-left: 30px;
+    padding-right: 0px;
+  }
+
+  .cardblog {
+    padding-left: 15px;
     padding-right: 15px;
   }
   
