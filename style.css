@@ -184,7 +184,6 @@ footer {
 }
 
 .con {
-  
   padding-top: 250px;
   padding-bottom: 250px;
 }
@@ -259,6 +258,14 @@ footer {
 
 .link ul li a:hover {
   color: white;
+}
+
+.musiccontent {
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (max-width: 900px) {
