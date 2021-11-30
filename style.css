@@ -202,12 +202,19 @@ body {
 
 
 /* music */
-.musiccontent {
-  height: 100vh;
-  color: white;
+.music {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  margin-top: 200px;
+}
+
+.artwork img{
+  width: 210px;
+  height: 210px;
+  object-fit: cover;
+  padding: 20px;
 }
 /* end of music */
 
