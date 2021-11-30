@@ -212,8 +212,8 @@ body {
 }
 
 .artwork img{
-  width: 220px;
-  height: 220px;
+  width: 215px;
+  height: 215px;
   object-fit: cover;
   padding: 20px;
 }
@@ -296,5 +296,8 @@ footer {
     width: 70%;
   }
   /* end of offcanvas */
+  
+  .artwork img {
+    padding: 15px;
 
 }
