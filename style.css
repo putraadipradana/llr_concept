@@ -212,8 +212,8 @@ body {
 }
 
 .artwork img{
-  width: 213px;
-  height: 213px;
+  width: 210px;
+  height: 210px;
   object-fit: cover;
   padding: 20px;
 }
