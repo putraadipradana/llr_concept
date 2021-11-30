@@ -207,13 +207,14 @@ body {
   flex-wrap: wrap;
   flex: 1;
   align-items: center;
+  justify-content: center;
   margin-top: 200px;
 
 }
 
 .artwork img{
-  width: 215px;
-  height: 215px;
+  width: 415px;
+  height: 415px;
   object-fit: cover;
   padding: 20px;
 }
