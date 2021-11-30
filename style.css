@@ -297,4 +297,7 @@ footer {
   }
   /* end of offcanvas */
 
+  .artwork img{
+    padding: 10px;
+  }
 }
