@@ -12,39 +12,49 @@
     <title>Music - Sanctum</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-          <div class="">
-              <a class="navbar-brand" href="index.html">Sanctum</a>
-          </div>
-          <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
-      </nav>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="">Sanctum</a>
+        <div class="menuout">
+            <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <a type="button" class="close mt-3 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
+            <a type="button" class="search text-reset">Search</a>
+            <a type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
         </div>
         <div class="offcanvas-body">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <hr>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <hr>
+            <li><a href="">Instagram <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Soundcloud <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Youtube <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
         </div>
-        </div>
-        <section class="container-fluid">
-            <div class="music">
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
-                <div class="artwork"><img src="assets/images/home.jpg" alt=""></div>
+    </div>
+        <section class="musicsection">
+            <div class="msection">
+                <div class="alertdownload">
+                    <span>Want To Download It? Just Hit It!!</span>
+                </div>
+                <div class="songs">
+                    <div class="event" style=" display: flex; justify-content: center; align-items: center; color: white; font-size: 150px;">
+                    </div>
+                    <div class="music">
+                        <a class="artwork" href=""><img src="assets/images/blog1.jpg"></a>
+                        <a class="artwork" href=""><img src="assets/images/blog2.jpg"></a>
+                        <a class="artwork" href=""><img src="assets/images/blog3.jpg"></a>
+                        <a class="artwork" href=""><img src="assets/images/blog4.jpg"></a>
+                        <a class="artwork" href=""><img src="assets/images/blog5.jpg"></a>
+                        <a class="artwork" href=""><img src="assets/images/blog6.jpg"></a>
+                    </div>
+                </div>
+        
             </div>
-        </div>
         </section>
         <footer class="sticky-footer">
           <div class="foot container">
@@ -70,6 +80,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3fd33ff385.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

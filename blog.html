@@ -12,32 +12,36 @@
     <title>Blog</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-          <div class="">
-              <a class="navbar-brand" href="index.html">Sanctum</a>
-          </div>
-          <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
-      </nav>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="">Sanctum</a>
+        <div class="menuout">
+            <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <a type="button" class="close mt-3 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
+            <a type="button" class="search text-reset">Search</a>
+            <a type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
         </div>
         <div class="offcanvas-body">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <hr>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <hr>
+            <li><a href="">Instagram <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Soundcloud <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Youtube <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
         </div>
-        </div>
+    </div>
       <section class="container-fluid">
         <div class="blog-quotes container-fluid">
             <p>200 Post.</p>
         </div>
         <div class="cardblog">
-            <div class="list">
+            <a class="list" href="blogarticle.html">
                 <div class="thumb">
                     <img class="img" src="assets/images/blog1.jpg" alt="">
                 </div>
@@ -51,7 +55,37 @@
                 <div class="category">
                     <span>Tour</span>
                 </div>
-            </div>
+            </a>
+            <a class="list" href="blogarticle.html">
+                <div class="thumb">
+                    <img class="img" src="assets/images/blog1.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>The house of wolves</span>
+                </div>
+                <div class="main">
+                    <p>I've learned a lot but it took me too long to find out who I am and to prove you wrong. How can you live before you die. When you're already dead on the inside
+                        </p>
+                </div>
+                <div class="category">
+                    <span>Tour</span>
+                </div>
+            </a>
+            <a class="list" href="blogarticle.html">
+                <div class="thumb">
+                    <img class="img" src="assets/images/blog1.jpg" alt="">
+                </div>
+                <div class="title">
+                    <span>The house of wolves</span>
+                </div>
+                <div class="main">
+                    <p>I've learned a lot but it took me too long to find out who I am and to prove you wrong. How can you live before you die. When you're already dead on the inside
+                        </p>
+                </div>
+                <div class="category">
+                    <span>Tour</span>
+                </div>
+            </a>
         </div>
       </section>
       <footer class="sticky-footer">
@@ -77,6 +111,7 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/3fd33ff385.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--

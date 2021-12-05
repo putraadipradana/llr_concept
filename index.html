@@ -14,50 +14,55 @@
 </head>
 
 <body>
-    
-    <section id="home">
-        <div class="carousels-item">
-            <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
-                <div class="">
-                    <a class="navbar-brand" href="">Sanctum</a>
-                </div>
-                <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
-            </nav>
-            <img src="assets/images/home.jpg" class="d-block w-100" alt="...">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+        <a class="navbar-brand" href="">Sanctum</a>
+        <div class="menuout">
+            <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
         </div>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    </nav>
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <a type="button" class="close mt-3 text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
+            <a type="button" class="search text-reset">Search</a>
+            <a type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
         </div>
         <div class="offcanvas-body">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <hr>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <hr>
+            <li><a href="">Instagram <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Soundcloud <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
+            <li><a href="">Youtube <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
         </div>
-        </div>
-
-
+    </div>
+    
+    <div class="carousels-item">
+    </div>
+    <section>
+    
+    
+    
         <!-- content -->
         <div class="container con">
-            <div class="content">
-                <div class="time">
-                    <span>31 DEC FRI</span>
+                <div class="row justify-content-md-center content">
+                    <div class="time col-xl-2">
+                        <span>31 DEC FRI</span>
+                    </div>
+                    <div class="place col-xl-3">
+                        <span>Nighthouse 2021 @ 09.00pm</span>
+                    </div>
+                    <div class="country col-xl-3">
+                        <span>Lombok, Indonesia</span>
+                    </div>
+                    <div class="read-more col-xl-2">
+                        <a href="" class="badge bg-primary rounded-pill">Ticket</a>
+                        <a href="" class="badge bg-danger rounded-pill">Info</a>
+                    </div>
                 </div>
-                <div class="place">
-                    <span>Clubhouse 2021 @ 08.00pm</span>
-                </div>
-                <div class="place2">
-                    <span>Oslo, Norway</span>
-                </div>
-                <div class="read-more">
-                    <a href="">Read More</a>
-                </div>
-            </div>
+                <hr>
         </div>
         </div>
         <!-- end of content -->
