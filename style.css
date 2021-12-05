@@ -88,24 +88,24 @@
 
 /* home */
 .event-header {
-  background-image: url('https://images.pexels.com/photos/1843639/pexels-photo-1843639.jpeg?cs=srgb&dl=pexels-marco-perretta-1843639.jpg&fm=jpg');
+  background-image: url('assets/images/header.jpg');
   min-height: 85vh;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   object-fit: cover;
   background-attachment: fixed;
 }
 .music-header {
-  background-image: url('https://images.pexels.com/photos/4498177/pexels-photo-4498177.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498177.jpg&fm=jpg');
+  background-image: url('assets/images/header.jpg');
   min-height: 85vh;
   background-size: cover;
-  background-position: left;
+  background-position: center;
   object-fit: cover;
   background-attachment: fixed;
 }
 
 .blog-header {
-  background-image: url('https://images.pexels.com/photos/746351/pexels-photo-746351.jpeg?cs=srgb&dl=pexels-francesco-paggiaro-746351.jpg&fm=jpg');
+  background-image: url('assets/images/header.jpg');
   min-height: 85vh;
   background-size: cover;
   background-position: center;
