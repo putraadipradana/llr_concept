@@ -91,7 +91,7 @@
   background-image: url('https://images.pexels.com/photos/1843639/pexels-photo-1843639.jpeg?cs=srgb&dl=pexels-marco-perretta-1843639.jpg&fm=jpg');
   min-height: 85vh;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   object-fit: cover;
   background-attachment: fixed;
 }
@@ -99,7 +99,7 @@
   background-image: url('https://images.pexels.com/photos/4498177/pexels-photo-4498177.jpeg?cs=srgb&dl=pexels-karolina-grabowska-4498177.jpg&fm=jpg');
   min-height: 85vh;
   background-size: cover;
-  background-position: center;
+  background-position: left;
   object-fit: cover;
   background-attachment: fixed;
 }
@@ -354,10 +354,6 @@ footer {
   background-size: cover;
   object-fit: cover;
   transition: 0.2s;
-}
-
-.artwork:hover a img {
-  transform: scale(1.15);
 }
 
 .alertdownload {
