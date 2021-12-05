@@ -89,7 +89,7 @@
 /* home */
 .event-header {
   background-image: url('assets/images/header.jpg');
-  min-height: 85vh;
+  min-height: 75vh;
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -97,7 +97,7 @@
 }
 .music-header {
   background-image: url('assets/images/header.jpg');
-  min-height: 85vh;
+  min-height: 75vh;
   background-size: cover;
   background-position: center;
   object-fit: cover;
@@ -106,7 +106,7 @@
 
 .blog-header {
   background-image: url('assets/images/header.jpg');
-  min-height: 85vh;
+  min-height: 75vh;
   background-size: cover;
   background-position: center;
   object-fit: cover;
