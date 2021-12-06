@@ -206,13 +206,6 @@
   text-decoration: none;
 }
 
-
-.thumb {
-  max-height: 350px;
-  max-width: 350px;
-  overflow: hidden;
-}
-
 .thumb img {
   background-size: cover;
   background-position: center;
