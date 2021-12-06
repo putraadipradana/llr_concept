@@ -200,7 +200,7 @@
 }
 
 .list {
-  max-width: 350px;
+  width: 350px;
   height: fit-content;
   margin-bottom: 30px;
   text-decoration: none;
