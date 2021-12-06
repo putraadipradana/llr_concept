@@ -13,14 +13,13 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top container" id="navbar">
-        <a class="navbar-brand" href="index.html">Sanctum</a>
+        <a class="navbar-brand text-black" href="index.html">Sanctum</a>
         <div class="menuout">
-            <a class="menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
+            <a class="menu text-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Menu</a>
         </div>
     </nav>
     <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-            <a type="button" class="search text-reset">Search</a>
             <a type="button" class="close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</a>
         </div>
         <div class="offcanvas-body">
@@ -36,15 +35,44 @@
             <li><a href="">Youtube <i class="text-gray-600 fas fa-external-link-alt"></i></a></li>
         </div>
     </div>
-    <div class="music-header">
-    </div>
-        <section class="musicsection">
-            <div class="msection">
-                <div class="alertdownload">
-                    <span>Want To Download It? Just Hit It!!</span>
+    <nav id="navbar-top" class="twoline">
+        <div class="two container d-flex ">
+            <div class="l">
+                <span>Music</span>
+            </div>
+            <div class="r ms-auto">
+                <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Filter
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenu2">
+                    <li><button class="dropdown-item" type="button">All</button></li>
+                    <li><button class="dropdown-item" type="button">Remix</button></li>
+                    <li><button class="dropdown-item" type="button">Mashup</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="musicsection">
+        <div class="msection">
+            <div class="alertdownload">
+                <span>Want To Download It? Just Hit It!!</span>
+            </div>
+            <div class="songs">
+                <div class="music">
+                        <div class="artwork">
+                            <a href=""><img src="assets/images/musicheader.jpg"></a>
+                        </div>
+                        <div class="artwork">
+                            <a href=""><img src="assets/images/musicheader.jpg"></a>
+                        </div>
+                        <div class="artwork">
+                            <a href=""><img src="assets/images/musicheader.jpg"></a>
+                        </div>
                 </div>
             </div>
-        </section>
+    
+        </div>
+    </section>
         <footer class="sticky-footer">
             <div class="foot container">
                 <div class="copy">

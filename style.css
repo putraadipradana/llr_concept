@@ -13,6 +13,30 @@
   font-family: 'Poppins';
 }
 
+.twoline {
+  margin-top: 70px;
+  background-color: white;
+}
+
+.two {
+  height: 35px;
+  align-items: center;
+}
+
+.two .r a{
+  padding-right: 20px;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+
+.two .r a:hover {
+  color: black;
+}
+
+.two .l{
+  font-size: 14px;
+}
 /* offcanvas */
 .offcanvas {
   background-color: #1c1c1c;
@@ -34,28 +58,15 @@
   text-decoration: none;
   color: white;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .offcanvas-body a:hover {
   opacity: 55%;
 }
 
-.search {
-  margin-left: 30px;
-  font-size: 13px;
-  text-decoration: none;
-  color: white;
-  margin-top: 31px;
-}
-
-.search:hover {
-  color: gray;
-  opacity: 55%;
-}
-
 .close {
-  margin-right: 55px;
+  margin-left: 30px;
   font-size: 13px;
   text-decoration: none;
   color: white;
@@ -89,27 +100,12 @@
 /* home */
 .event-header {
   background-image: url('assets/images/eventheader.jpg');
-  background-position: center;
-  min-height: 75vh;
+  min-height: 85vh;
   background-size: cover;
-  background-attachment: fixed;
-  object-fit: cover;
-}
-.blog-header {
-  background-image: url('assets/images/blogheader.jpg');
   background-position: center;
-  min-height: 75vh;
-  background-size: cover;
-  background-attachment: fixed;
   object-fit: cover;
-}
-.music-header {
-  background-image: url('assets/images/musicheader.jpg');
-  background-position: center;
-  min-height: 75vh;
-  background-size: cover;
   background-attachment: fixed;
-  object-fit: cover;
+  background-color: #1c1c1c;
 }
 
 /* section {
@@ -184,8 +180,8 @@
 /* blog */
 .blog-quotes p {
   font-size: 100px;
-  font-weight: 600;
   line-height: 0.8;
+  font-weight: 800;
 }
 
 .cardblog {
@@ -197,7 +193,7 @@
 }
 
 .blog-quotes {
-  margin-top: 50px;
+  margin-top: 65vh;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -210,13 +206,6 @@
   text-decoration: none;
 }
 
-.main:hover {
-  cursor: pointer;
-}
-
-.main a:hover .thumb img {
-  transform: scale(1.1);
-}
 
 .thumb {
   max-height: 350px;
@@ -235,20 +224,20 @@
 
 
 .title {
-  margin-top: 5px;
+  margin-top: 15px;
   color: black;
 }
 
 .title span {
-  font-size: 25px;
+  font-size: 20px;
   text-transform: capitalize;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   max-width: 100%;
 }
 
 .main {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 
@@ -291,6 +280,11 @@
 .single-gallery img:hover {
   opacity: 55%;
 }
+
+.carousel-item img {
+  max-height: 90vh;
+  object-fit: cover;
+}
 /* end ofblog article */
 /* end of blog */
 
@@ -317,6 +311,7 @@ footer {
   color: white;
   font-size: 13,5px;
 }
+
 
 /* end of footer */
 
@@ -352,7 +347,15 @@ footer {
   background-position: center;
   background-size: cover;
   object-fit: cover;
-  transition: 0.2s;
+  transition: 0.05s;
+}
+
+.artwork:hover a img {
+  transform: scale(1.05);
+}
+
+.artwork:hover {
+  border-radius: 0%;
 }
 
 .alertdownload {
@@ -360,6 +363,7 @@ footer {
   justify-content: center;
   text-transform: capitalize;
   padding-bottom: 60px;
+  margin-top: 200px;
 }
 
 .xm {
@@ -399,10 +403,13 @@ footer {
 
   /* event */
   .con {
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 50px;
   }
   /* end of event */
+  .twoline {
+    margin-top: 60px;
+  }
   
 }
 @media only screen and (max-width: 900px) {
@@ -421,6 +428,10 @@ footer {
   .navbar {
     padding-left: 20px;
   }
+  .two .l {
+    padding-left: 8px;
+  }
+  
   /* end of home */
 
 
@@ -467,4 +478,3 @@ footer {
   /* end of footer */
 
 }
-
