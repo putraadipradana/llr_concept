@@ -101,10 +101,7 @@
 .event-header {
   background-image: url('assets/images/eventheader.jpg');
   min-height: 85vh;
-  background-size: cover;
-  background-position: center;
   object-fit: cover;
-  background-attachment: fixed;
   background-color: #1c1c1c;
 }
 
@@ -238,8 +235,6 @@
   background-image: url('assets/images/header.jpg');
   background-position: center;
   min-height: 75vh;
-  background-size: cover;
-  background-attachment: fixed;
   object-fit: cover;
 }
 
@@ -428,8 +423,8 @@ footer {
 
   /* event */
   .con {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
   }
   /* end of event */
   .twoline {
